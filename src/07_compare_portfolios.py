@@ -69,7 +69,7 @@ def main():
         raise RuntimeError("value-weighted monthly section not found; send me the section titles above")
     lib_vw = lib_vw / 100.0
     nof = pick(sections, "number", "firms")
-    size = pick(sections, "average", "firm", "size")
+    size = pick(sections, "average", "market", "cap")
 
     ours = pd.read_csv(OUT / "05_portfolio_returns_monthly.csv", index_col=0)[PORTS]
     common = ours.index.intersection(lib_vw.index)

@@ -1,7 +1,7 @@
 step,stock_years,distinct_permno
 stock-years with ME in June t,105221,11586
 ... and ME in December t-1,102265,11414
-... with a valid CCM link on June 30,100426,10986
-... and a Compustat record for the fiscal year ending in t-1,100099,10950
-... and computable book equity,99896,10921
-... and BE > 0 (eligible for the SMB/HML portfolios),95116,10676
+... with a valid CCM link on June 30,100494,10999
+... and a Compustat record for the fiscal year ending in t-1,100167,10963
+... and computable book equity,99963,10934
+... and BE > 0 (eligible for the SMB/HML portfolios),95182,10689

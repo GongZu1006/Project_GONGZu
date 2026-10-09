@@ -15,6 +15,7 @@ ROOT = Path(__file__).resolve().parents[1]
 DATA, PROC, OUT = ROOT / "data", ROOT / "processed", ROOT / "output"
 FIRST_T, LAST_T = 2001, 2025          # formation years (returns July 2001 - December 2025)
 LINES = []
+LINK_TYPES = ["LC", "LU", "LS"]   # baseline was ["LC", "LU"]
 
 
 def log(msg=""):
@@ -29,8 +30,8 @@ def load_ccm():
     ccm = pd.read_csv(path, usecols=["gvkey", "LPERMNO", "LINKTYPE", "LINKPRIM", "LINKDT", "LINKENDDT"],
                       dtype={"LINKTYPE": str, "LINKPRIM": str, "LINKDT": str, "LINKENDDT": str})
     log(f"CCM rows: {len(ccm):,}")
-    ccm = ccm[ccm["LINKTYPE"].isin(["LC", "LU"]) & ccm["LINKPRIM"].isin(["P", "C"])].copy()
-    log(f"CCM rows with LINKTYPE in LC/LU and LINKPRIM in P/C: {len(ccm):,}")
+    ccm = ccm[ccm["LINKTYPE"].isin(LINK_TYPES) & ccm["LINKPRIM"].isin(["P", "C"])].copy()
+    log(f"CCM rows with LINKTYPE in {LINK_TYPES} and LINKPRIM in P/C: {len(ccm):,}")
     ccm["LINKDT"] = pd.to_datetime(ccm["LINKDT"], errors="coerce")
     open_end = ccm["LINKENDDT"].eq("E")
     ccm["LINKENDDT"] = pd.to_datetime(ccm["LINKENDDT"].where(~open_end), errors="coerce")
