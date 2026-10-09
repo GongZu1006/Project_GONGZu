@@ -1,0 +1,11 @@
+# Restricted raw data - never upload
+data/
+
+# Environments and caches
+.venv/
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+# System files
+.DS_Store

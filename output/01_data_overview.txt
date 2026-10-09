@@ -1,0 +1,248 @@
+project root: /Users/rita/Desktop/HKU/课程/6067/Part2/Project_GONG Zu
+data folder:  /Users/rita/Desktop/HKU/课程/6067/Part2/Project_GONG Zu/data
+
+=== monthly_stock.csv ===
+path: data/02_Monthly_Stocks_and_Factors/data/monthly_stock.csv
+size: 1,235.0 MB
+columns and dtypes (100,000-row sample):
+  PERMNO: int64
+  SecInfoStartDt: str
+  SecInfoEndDt: str
+  SecurityBegDt: str
+  SecurityEndDt: str
+  SecurityHdrFlg: str
+  HdrCUSIP: str
+  HdrCUSIP9: str
+  CUSIP: str
+  CUSIP9: str
+  PrimaryExch: str
+  ConditionalType: str
+  ExchangeTier: str
+  TradingStatusFlg: str
+  SecurityNm: str
+  ShareClass: str
+  USIncFlg: str
+  IssuerType: str
+  SecurityType: str
+  SecuritySubType: str
+  ShareType: str
+  SecurityActiveFlg: str
+  DelActionType: str
+  DelStatusType: str
+  DelReasonType: str
+  DelPaymentType: str
+  Ticker: str
+  TradingSymbol: str
+  PERMCO: int64
+  SICCD: int64
+  NAICS: int64
+  ICBIndustry: str
+  NASDCompno: int64
+  NASDIssuno: int64
+  IssuerNm: str
+  YYYYMM: int64
+  MthCalDt: str
+  MthCompFlg: str
+  MthCompSubFlg: str
+  MthPrc: float64
+  MthPrcFlg: str
+  MthPrcDt: str
+  MthDtFlg: str
+  MthDelFlg: str
+  MthCap: float64
+  MthPrevPrc: float64
+  MthPrevPrcFlg: str
+  MthPrevDt: str
+  MthPrevDtFlg: str
+  MthPrevCap: float64
+  MthRet: float64
+  MthRetx: float64
+  MthRetFlg: str
+  MthDisCnt: int64
+  MthVol: float64
+  MthVolFlg: str
+  MthPrcVol: float64
+  MthFacShrFlg: str
+  MthPrcVolMissCnt: int64
+  ShrStartDt: str
+  ShrEndDt: str
+  ShrOut: int64
+  ShrSource: str
+  ShrFacType: str
+  ShrAdrFlg: str
+  DisExDt: str
+  DisSeqNbr: float64
+  DisOrdinaryFlg: str
+  DisType: str
+  DisFreqType: str
+  DisPaymentType: str
+  DisDetailType: str
+  DisTaxType: str
+  DisOrigCurType: str
+  DisDivAmt: float64
+  DisFacPr: float64
+  DisFacShr: float64
+  DisDeclareDt: str
+  DisRecordDt: str
+  DisPayDt: str
+  DisPERMNO: float64
+  DisPERMCO: float64
+  vwretd: float64
+  vwretx: float64
+  ewretd: float64
+  ewretx: float64
+  sprtrn: float64
+rows: 2,423,212
+distinct PERMNO: 25,301
+MthCalDt: min=2000-01-31 00:00:00  max=2025-12-31 00:00:00  non-date values=0  examples=[]
+rows per year: 2000:103,267, 2001:96,619, 2002:90,186, 2003:85,580, 2004:84,264, 2005:84,583, 2006:84,764, 2007:86,743, 2008:85,846, 2009:82,051, 2010:81,823, 2011:82,717, 2012:82,966, 2013:82,615, 2014:85,588, 2015:88,002, 2016:88,396, 2017:88,830, 2018:90,909, 2019:92,409, 2020:93,979, 2021:106,393, 2022:116,031, 2023:115,061, 2024:116,741, 2025:126,849
+value counts for PrimaryExch:
+  'Q': 1,048,582
+  'N': 793,148
+  'R': 305,160
+  'A': 170,911
+  'B': 59,256
+  'X': 46,143
+  'I': 12
+value counts for SecurityType:
+  'EQTY': 1,762,680
+  'FUND': 643,847
+  '<NA>': 16,685
+value counts for SecuritySubType:
+  'COM': 1,762,680
+  'ETF': 458,035
+  'CEF': 185,812
+  'UNK': 16,685
+value counts for ShareType:
+  'NS': 2,150,849
+  'AD': 120,336
+  'SB': 102,665
+  'UG': 32,240
+  '<NA>': 16,685
+  'CE': 437
+value counts for USIncFlg:
+  'Y': 2,106,414
+  'N': 316,798
+value counts for IssuerType:
+  'CORP': 1,712,213
+  'ACOR': 648,482
+  'REIT': 62,517
+value counts for ConditionalType:
+  'RW': 2,377,057
+  'NT': 29,458
+  '<NA>': 16,685
+  'NW': 12
+value counts for TradingStatusFlg:
+  'A': 2,376,611
+  'X': 29,458
+  'D': 16,685
+  'S': 334
+  'H': 124
+value counts for MthDelFlg:
+  'N': 2,404,965
+  'A': 13,051
+  'P': 4,099
+  'M': 781
+  'V': 269
+  'G': 47
+missing share MthRet: 1.25%
+missing share MthPrc: 1.21%
+missing share ShrOut: 0.00%
+missing share MthCap: 1.21%
+
+=== Compustat.csv ===
+path: data/04_Supplementary_Data/data/Compustat.csv
+size: 36.9 MB
+columns and dtypes (100,000-row sample):
+  costat: str
+  curcd: str
+  datafmt: str
+  indfmt: str
+  consol: str
+  tic: str
+  datadate: str
+  gvkey: int64
+  conm: str
+  sic: int64
+  fyear: int64
+  at: float64
+  ceq: float64
+  lt: float64
+  pstk: float64
+  pstkl: float64
+  pstkrv: float64
+  seq: float64
+  txditc: float64
+rows: 301,565
+distinct gvkey: 32,931
+datadate: min=2000-01-31 00:00:00  max=2025-12-31 00:00:00  non-date values=0  examples=[]
+rows per year: 2000:12,196, 2001:11,641, 2002:11,332, 2003:11,118, 2004:10,945, 2005:10,886, 2006:10,889, 2007:10,904, 2008:10,717, 2009:10,649, 2010:10,861, 2011:11,250, 2012:11,651, 2013:11,760, 2014:11,624, 2015:11,445, 2016:11,421, 2017:11,326, 2018:11,397, 2019:11,647, 2020:11,946, 2021:12,269, 2022:12,572, 2023:12,708, 2024:12,938, 2025:13,473
+value counts for indfmt:
+  'INDL': 301,565
+value counts for datafmt:
+  'STD': 301,565
+value counts for consol:
+  'C': 301,565
+value counts for curcd:
+  'USD': 253,607
+  'CAD': 47,958
+missing share seq: 22.99%
+missing share ceq: 23.16%
+missing share at: 22.98%
+missing share lt: 23.10%
+missing share txditc: 31.16%
+missing share pstkrv: 23.80%
+missing share pstkl: 23.83%
+missing share pstk: 23.22%
+
+=== CCM.csv ===
+path: data/04_Supplementary_Data/data/CCM.csv
+size: 2.1 MB
+columns and dtypes (100,000-row sample):
+  gvkey: int64
+  tic: str
+  LINKPRIM: str
+  LIID: str
+  LINKTYPE: str
+  LPERMNO: int64
+  LPERMCO: int64
+  LINKDT: str
+  LINKENDDT: str
+rows: 39,761
+distinct LPERMNO: 35,625
+LINKDT: min=1949-07-01 00:00:00  max=2025-12-23 00:00:00  non-date values=0  examples=[]
+LINKENDDT: min=1958-12-23 00:00:00  max=2026-01-30 00:00:00  non-date values=10,939  examples=['E']
+value counts for LINKTYPE:
+  'LC': 16,902
+  'LU': 15,916
+  'LS': 6,943
+value counts for LINKPRIM:
+  'P': 31,149
+  'C': 8,093
+  'J': 422
+  'N': 97
+missing share LINKDT: 0.00%
+missing share LINKENDDT: 0.00%
+
+=== F-F factors and RF.csv ===
+path: data/02_Monthly_Stocks_and_Factors/data/F-F factors and RF.csv
+total lines: 1310
+first 15 lines (introductory text of the public library file):
+  | This file was created using the 202607 CRSP database.
+  | The 1-month TBill rate data until 202405 are from Ibbotson Associates. Starting from 202406, the 1-month TBill rate is from ICE BofA US 1-Month Treasury Bill Index. 
+  | The annual TBill return is compounded from the monthly T-bill rates from January to December. 
+  | 
+  | ,Mkt-RF,SMB,HML,RF
+  | 192607,   2.89,  -2.42,  -2.75,   0.22
+  | 192608,   2.64,  -1.44,   4.13,   0.25
+  | 192609,   0.38,  -1.36,   0.05,   0.23
+  | 192610,  -3.27,  -0.18,   0.78,   0.32
+  | 192611,   2.54,  -0.17,  -0.48,   0.31
+  | 192612,   2.62,  -0.06,   0.10,   0.28
+  | 192701,  -0.05,  -0.47,   4.76,   0.25
+  | 192702,   4.17,  -0.23,   3.04,   0.26
+  | 192703,   0.14,  -2.01,  -2.32,   0.30
+  | 192704,   0.47,   0.54,   0.62,   0.25
+monthly rows: 1201 (line 6 to line 1206); contiguous block: True
+first month: 192607   last month: 202607
+column header line just above the monthly block: ',Mkt-RF,SMB,HML,RF'
