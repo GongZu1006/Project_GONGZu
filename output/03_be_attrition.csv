@@ -1,0 +1,8 @@
+step,rows,distinct_gvkey
+raw Compustat.csv,301565,32931
+INDL / STD / C,301565,32931
+USD reporting currency,253607,27875
+one record per firm and calendar year,253284,27875
+stockholders' equity computable,196011,20366
+book equity computed,196011,20366
+book equity > 0,168398,18613
