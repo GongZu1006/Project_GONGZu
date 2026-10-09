@@ -1,0 +1,77 @@
+reading data/02_Monthly_Stocks_and_Factors/data/monthly_stock.csv
+duplicate rows on ['PERMNO', 'YYYYMM']: 5,457; keys with conflicting values: 0
+rows where MthCalDt and YYYYMM disagree: 0
+
+--- units / consistency checks ---
+ME / MthCap: p1=1.0000, p25=1.0000, p50=1.0000, p75=1.0000, p99=1.0000  | share within 0.1% of 1: 100.00%
+lag_me / MthPrevCap: p1=1.0000, p25=1.0000, p50=1.0000, p75=1.0000, p99=1.0000  | share within 0.1% of 1: 100.00%
+share of rows with negative MthPrc: 0.00%
+
+--- TradingStatusFlg x MthDelFlg (rows) ---
+MthDelFlg           A  G   M        N    P  V
+TradingStatusFlg                             
+A                 970  1  22  1338221  174  8
+H                   0  0   0      120    0  0
+S                   0  0   0       98    0  0
+
+--- ConditionalType x MthDelFlg (rows) ---
+MthDelFlg          A  G   M        N    P  V
+ConditionalType                             
+RW               970  1  22  1338439  174  8
+
+share of missing MthRet by MthDelFlg:
+MthDelFlg
+A    0.0000
+G    0.0000
+M    0.0000
+N    0.0004
+P    0.0000
+V    0.0000
+
+--- stocks per month ---
+months: 312; min=3,570; median=4,033; max=6,618
+average number of stocks per month, by year:
+ym
+2000    6554
+2001    5951
+2002    5408
+2003    5002
+2004    4848
+2005    4790
+2006    4715
+2007    4638
+2008    4477
+2009    4172
+2010    4012
+2011    3858
+2012    3726
+2013    3644
+2014    3731
+2015    3769
+2016    3662
+2017    3596
+2018    3596
+2019    3596
+2020    3613
+2021    4100
+2022    4401
+2023    4153
+2024    3908
+2025    3715
+rows by PrimaryExch: {'Q': 819176, 'N': 427964, 'A': 92474}
+
+--- my value-weighted return vs CRSP vwretd ---
+months compared: 311; correlation: 0.9974; mean abs difference: 0.248 pct points; mean difference (ours - vwretd): 0.043 pct points
+
+--- attrition ---
+                           step    rows  distinct_permno
+          raw monthly_stock.csv 2423212            25301
+                   EQTY and COM 1762680            17188
+                   ShareType NS 1596725            15677
+                US-incorporated 1419376            13309
+           IssuerType ACOR/CORP 1369730            12958
+                 Exchange N/A/Q 1342369            12949
+      after dropping duplicates 1339614            12949
+              has return (flag) 1339098            12948
+                  has ME (flag) 1339460            12949
+has return and lagged ME (flag) 1326127            12863
