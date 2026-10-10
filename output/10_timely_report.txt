@@ -1,0 +1,87 @@
+eligible stock-years: 95,182; formation years: 25
+check: BE/ME rebuilt as BE / ME_Dec vs bm_sec from step 4, max relative difference: 0.00e+00
+validation: baseline HML rebuilt here vs HML saved in step 5, max abs difference: 0.000000 pp (must be ~0, otherwise the pipeline differs from step 5)
+months: 294; months with a missing value (baseline / timely): 0 / 0
+
+=== Table 5.6. Baseline and timely value factors, full sample ===
+| Series | Months | Mean (% per month) | NW s.e. (pp) | NW t | Std (% per month) | Mean (% per year) | Annualized mean/std |
+|---|---|---|---|---|---|---|---|
+| HML, baseline (BE/ME with December t-1 ME) | 294 | 0.016 | 0.204 | 0.076 | 3.009 | 0.186 | 0.018 |
+| HML, timely (BE/ME with June t ME) | 294 | 0.092 | 0.215 | 0.426 | 3.171 | 1.098 | 0.100 |
+| Difference (timely minus baseline) | 294 | 0.076 | 0.065 | 1.175 | 1.202 | 0.912 | 0.219 |
+| Small-stock value spread S/H-S/L, baseline | 294 | 0.160 | 0.226 | 0.707 | 3.253 | 1.918 | 0.170 |
+| Small-stock value spread S/H-S/L, timely | 294 | 0.296 | 0.230 | 1.286 | 3.321 | 3.547 | 0.308 |
+| Big-stock value spread B/H-B/L, baseline | 294 | -0.129 | 0.220 | -0.584 | 3.418 | -1.546 | -0.131 |
+| Big-stock value spread B/H-B/L, timely | 294 | -0.113 | 0.235 | -0.478 | 3.596 | -1.351 | -0.108 |
+
+=== Table 5.7. Sub-period means ===
+| Series; period | Months | Mean (% per month) | NW t |
+|---|---|---|---|
+| HML, baseline (BE/ME with December t-1 ME); Full sample | 294 | 0.016 | 0.076 |
+| HML, baseline (BE/ME with December t-1 ME); 2001-07 to 2007-12 | 78 | 0.457 | 1.643 |
+| HML, baseline (BE/ME with December t-1 ME); 2008-01 to 2015-12 | 96 | -0.179 | -0.655 |
+| HML, baseline (BE/ME with December t-1 ME); 2016-01 to 2025-12 | 120 | -0.116 | -0.288 |
+| HML, timely (BE/ME with June t ME); Full sample | 294 | 0.092 | 0.426 |
+| HML, timely (BE/ME with June t ME); 2001-07 to 2007-12 | 78 | 0.398 | 1.431 |
+| HML, timely (BE/ME with June t ME); 2008-01 to 2015-12 | 96 | -0.110 | -0.386 |
+| HML, timely (BE/ME with June t ME); 2016-01 to 2025-12 | 120 | 0.053 | 0.121 |
+| Difference (timely minus baseline); Full sample | 294 | 0.076 | 1.175 |
+| Difference (timely minus baseline); 2001-07 to 2007-12 | 78 | -0.060 | -0.363 |
+| Difference (timely minus baseline); 2008-01 to 2015-12 | 96 | 0.070 | 1.018 |
+| Difference (timely minus baseline); 2016-01 to 2025-12 | 120 | 0.169 | 1.678 |
+
+=== Table 5.8. Correlations ===
+| Series | HML baseline | HML timely | MKT-RF | SMB |
+|---|---|---|---|---|
+| HML baseline | 1.000 | 0.926 | 0.024 | 0.074 |
+| HML timely | 0.926 | 1.000 | 0.109 | 0.140 |
+| MKT-RF | 0.024 | 0.109 | 1.000 | 0.354 |
+| SMB | 0.074 | 0.140 | 0.354 | 1.000 |
+
+=== Table 5.9. Stocks changing BE/ME group when June ME replaces December ME ===
+| Formation year | stocks | share_moved | share_moved_value_weighted | rank_corr_bm |
+|---|---|---|---|---|
+| 2001 | 5563 | 0.229 | 0.078 | 0.876 |
+| 2002 | 5021 | 0.253 | 0.137 | 0.826 |
+| 2003 | 4673 | 0.201 | 0.125 | 0.906 |
+| 2004 | 4472 | 0.191 | 0.114 | 0.917 |
+| 2005 | 4436 | 0.219 | 0.152 | 0.899 |
+| 2006 | 4338 | 0.183 | 0.136 | 0.920 |
+| 2007 | 4244 | 0.199 | 0.157 | 0.919 |
+| 2008 | 4204 | 0.225 | 0.173 | 0.888 |
+| 2009 | 3900 | 0.240 | 0.144 | 0.879 |
+| 2010 | 3722 | 0.179 | 0.097 | 0.934 |
+| 2011 | 3593 | 0.169 | 0.112 | 0.936 |
+| 2012 | 3491 | 0.158 | 0.068 | 0.940 |
+| 2013 | 3357 | 0.148 | 0.088 | 0.945 |
+| 2014 | 3376 | 0.155 | 0.098 | 0.947 |
+| 2015 | 3461 | 0.152 | 0.075 | 0.941 |
+| 2016 | 3360 | 0.182 | 0.112 | 0.920 |
+| 2017 | 3204 | 0.177 | 0.087 | 0.928 |
+| 2018 | 3189 | 0.169 | 0.101 | 0.933 |
+| 2019 | 3223 | 0.164 | 0.070 | 0.926 |
+| 2020 | 3209 | 0.217 | 0.073 | 0.903 |
+| 2021 | 3302 | 0.166 | 0.041 | 0.931 |
+| 2022 | 3659 | 0.246 | 0.124 | 0.857 |
+| 2023 | 3566 | 0.186 | 0.085 | 0.907 |
+| 2024 | 3378 | 0.185 | 0.066 | 0.908 |
+| 2025 | 3241 | 0.186 | 0.067 | 0.917 |
+
+=== Table 5.10. Transition shares between baseline and timely BE/ME groups (pooled) ===
+| Baseline group (rows) / timely group (columns) | L | M | H |
+|---|---|---|---|
+| L | 0.850 | 0.138 | 0.012 |
+| M | 0.112 | 0.735 | 0.153 |
+| H | 0.008 | 0.151 | 0.841 |
+average share of stocks changing group: 19.1%; value-weighted: 10.3%; average yearly rank correlation of BE/ME: 0.912
+
+=== Table 5.11. Composition of the six portfolios under the timely sort ===
+| Portfolio (timely sort) | Average number of stocks | Average share of ME |
+|---|---|---|
+| S/L | 752.440 | 0.025 |
+| S/M | 1040.400 | 0.031 |
+| S/H | 1125.320 | 0.018 |
+| B/L | 428.960 | 0.534 |
+| B/M | 319.160 | 0.280 |
+| B/H | 141.000 | 0.111 |
+smallest number of stocks in any portfolio-year (timely): 102

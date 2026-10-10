@@ -1,0 +1,58 @@
+months: 294 (200107 to 202512); months missing in the library file: 0
+check: HML rebuilt from my six portfolios vs HML saved in step 5, max abs difference (pp): 0.000000
+check: HML rebuilt from the library's six portfolios vs the library's HML factor, max abs difference (pp): 0.005
+
+=== Table 5.1. Value premium and its components, full sample (NW = Newey-West, 6 lags) ===
+| Series | Months | Mean, this replication (% per month) | NW t | Mean (% per year) | Mean, library portfolios (% per month) | NW t, library |
+|---|---|---|---|---|---|---|
+| HML (value leg minus growth leg) | 294 | 0.016 | 0.076 | 0.186 | 0.035 | 0.174 |
+| Value leg, excess return | 294 | 0.754 | 2.167 | 9.044 | 0.778 | 2.152 |
+| Growth leg, excess return | 294 | 0.738 | 2.363 | 8.858 | 0.743 | 2.375 |
+| Small-stock value spread (S/H - S/L) | 294 | 0.160 | 0.707 | 1.918 | 0.171 | 0.770 |
+| Big-stock value spread (B/H - B/L) | 294 | -0.129 | -0.584 | -1.546 | -0.100 | -0.433 |
+| Small minus big value spread | 294 | 0.289 | 1.581 | 3.463 | 0.271 | 1.362 |
+
+=== Table 5.2. Test of H0: mean HML = 0.40% per month (the paper's estimate) ===
+| Series | Mean (% per month) | NW s.e. (pp) | z vs 0.40 (this sample's s.e.) | p (two-sided) | z vs 0.40 (adding the paper's s.e.) | p (two-sided), combined |
+|---|---|---|---|---|---|---|
+| HML, this replication | 0.0155 | 0.2038 | -1.8867 | 0.0592 | -1.5642 | 0.1178 |
+| HML, library portfolios | 0.0355 | 0.2039 | -1.7880 | 0.0738 | -1.4825 | 0.1382 |
+
+=== Table 5.3. Sub-period means ===
+| Series; sub-period | Months | Mean, this replication (% per month) | NW t | Mean, library portfolios (% per month) | NW t, library |
+|---|---|---|---|---|---|
+| HML (value leg minus growth leg); 2001-07 to 2007-12 | 78 | 0.457 | 1.643 | 0.354 | 1.309 |
+| HML (value leg minus growth leg); 2008-01 to 2015-12 | 96 | -0.179 | -0.655 | -0.128 | -0.467 |
+| HML (value leg minus growth leg); 2016-01 to 2025-12 | 120 | -0.116 | -0.288 | -0.041 | -0.099 |
+| Value leg, excess return; 2001-07 to 2007-12 | 78 | 0.653 | 1.176 | 0.569 | 0.973 |
+| Value leg, excess return; 2008-01 to 2015-12 | 96 | 0.580 | 0.780 | 0.597 | 0.797 |
+| Value leg, excess return; 2016-01 to 2025-12 | 120 | 0.958 | 2.008 | 1.059 | 2.070 |
+| Growth leg, excess return; 2001-07 to 2007-12 | 78 | 0.195 | 0.343 | 0.215 | 0.380 |
+| Growth leg, excess return; 2008-01 to 2015-12 | 96 | 0.759 | 1.245 | 0.724 | 1.185 |
+| Growth leg, excess return; 2016-01 to 2025-12 | 120 | 1.074 | 2.481 | 1.100 | 2.538 |
+| Small-stock value spread (S/H - S/L); 2001-07 to 2007-12 | 78 | 0.654 | 1.492 | 0.596 | 1.348 |
+| Small-stock value spread (S/H - S/L); 2008-01 to 2015-12 | 96 | -0.034 | -0.126 | 0.016 | 0.064 |
+| Small-stock value spread (S/H - S/L); 2016-01 to 2025-12 | 120 | -0.006 | -0.014 | 0.019 | 0.046 |
+| Big-stock value spread (B/H - B/L); 2001-07 to 2007-12 | 78 | 0.261 | 1.187 | 0.111 | 0.425 |
+| Big-stock value spread (B/H - B/L); 2008-01 to 2015-12 | 96 | -0.324 | -0.995 | -0.272 | -0.768 |
+| Big-stock value spread (B/H - B/L); 2016-01 to 2025-12 | 120 | -0.226 | -0.511 | -0.101 | -0.220 |
+| Small minus big value spread; 2001-07 to 2007-12 | 78 | 0.393 | 0.951 | 0.485 | 0.997 |
+| Small minus big value spread; 2008-01 to 2015-12 | 96 | 0.289 | 1.158 | 0.288 | 1.030 |
+| Small minus big value spread; 2016-01 to 2025-12 | 120 | 0.220 | 0.750 | 0.120 | 0.413 |
+
+=== Table 5.4. Wald tests that the three sub-period means are equal (2 d.f.) ===
+| Series | Wald stat, this replication | p-value, this replication | Wald stat, library | p-value, library |
+|---|---|---|---|---|
+| HML (value leg minus growth leg) | 2.9721 | 0.2263 | 1.6869 | 0.4302 |
+| Value leg, excess return | 0.2645 | 0.8761 | 0.4855 | 0.7845 |
+| Growth leg, excess return | 1.5141 | 0.4691 | 1.5404 | 0.4629 |
+| Small-stock value spread (S/H - S/L) | 1.8959 | 0.3875 | 1.3857 | 0.5001 |
+| Big-stock value spread (B/H - B/L) | 2.6211 | 0.2697 | 0.7803 | 0.6769 |
+| Small minus big value spread | 0.1171 | 0.9431 | 0.4525 | 0.7975 |
+
+=== Table 5.5. HML in three versions: full sample and sub-periods ===
+| Series | Full sample: mean (%) | Full sample: NW t | 2001-07 to 2007-12: mean (%) | 2001-07 to 2007-12: NW t | 2008-01 to 2015-12: mean (%) | 2008-01 to 2015-12: NW t | 2016-01 to 2025-12: mean (%) | 2016-01 to 2025-12: NW t |
+|---|---|---|---|---|---|---|---|---|
+| HML, this replication (security-level ME) | 0.016 | 0.076 | 0.457 | 1.643 | -0.179 | -0.655 | -0.116 | -0.288 |
+| HML, this replication (firm-level ME) | 0.018 | 0.086 | 0.485 | 1.741 | -0.199 | -0.713 | -0.113 | -0.280 |
+| HML, library factor | 0.035 | 0.172 | 0.353 | 1.307 | -0.128 | -0.469 | -0.041 | -0.100 |
